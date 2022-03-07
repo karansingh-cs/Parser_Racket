@@ -1,0 +1,6 @@
+{
+  read a; 
+  read b; 
+  c = a + b + fred - Wilma ;
+  if (d - 3) write q + -273 ; }  $$
+ 

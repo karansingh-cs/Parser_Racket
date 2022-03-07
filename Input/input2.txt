@@ -1,0 +1,8 @@
+{
+  read a; 
+  read b; 
+  c = a + b + b - c ;
+  if (d - 3) write q - 273 ;
+} 
+$$
+ 

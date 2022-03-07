@@ -1,0 +1,15 @@
+#lang br
+(require "grammar.rkt" "lexer.rkt" brag/support)
+
+(define
+  (parse input)
+  (define read-file (port->string (open-input-file input)
+                                  #:close? #t))
+  (with-handlers ([exn:fail? (lambda (exn)
+                               (displayln (exn-message exn)))])
+  (parse-to-datum (apply-tokenizer-maker make-tokenizer read-file))
+      (display "Accept")
+  ))
+
+;;Input the provided input files
+(parse "input/input5.txt")
